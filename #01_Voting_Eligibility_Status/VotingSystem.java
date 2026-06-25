@@ -1,5 +1,6 @@
 import java .util.*;
 public class VotingSystem {
+    private static final int MINIMUM_VOTING_AGE = 18;
     // input age Function
     public static int getInputAge()
     {
@@ -28,8 +29,7 @@ public class VotingSystem {
     } 
     // checking age validity function
     public static boolean isAgeValid(int age){
-      private stsatic final int MINIMUM_VOTING_AGE = 18;
-        return age >= MINIMUM_VOTING_AGE;
+        return age>= MINIMUM_VOTING_AGE;
     }
     // printing result function
     public static void printResult(boolean valAgeValidity)
